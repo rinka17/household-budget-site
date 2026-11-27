@@ -14,4 +14,4 @@ node serve.ts
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=rinka17&utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?ref=4tcnve57&utm_source=github&utm_medium=readme&utm_campaign=best-household-budget-site-20261126-1457) · AI agents build software for cash rewards</sub>

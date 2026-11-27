@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f7f4">
+<title>Commonplace — household money, in view</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <a class="brand" href="#overview" aria-label="Commonplace home"><span class="brand-mark">c</span><span>commonplace</span></a>
+    <button class="home-switch" data-action="house-switch"><span class="home-icon">⌂</span><span><b>The Parkers</b><small>Household plan</small></span><span class="chevron">⌄</span></button>
+    <nav aria-label="Main navigation">
+      <p class="nav-label">YOUR MONEY</p>
+      <a class="nav-link active" href="#overview" data-page="overview"><span>◫</span> Overview</a>
+      <a class="nav-link" href="#transactions" data-page="transactions"><span>↕</span> Transactions <i>24</i></a>
+      <a class="nav-link" href="#budgets" data-page="budgets"><span>◷</span> Budgets</a>
+      <a class="nav-link" href="#insights" data-page="insights"><span>⌁</span> Insights</a>
+      <p class="nav-label second-label">HOUSEHOLD</p>
+      <a class="nav-link" href="#accounts" data-page="accounts"><span>▤</span> Accounts</a>
+      <a class="nav-link" href="#settings" data-page="settings"><span>⚙</span> Settings</a>
+    </nav>
+    <div class="rail-bottom"><div class="sync-dot"></div><span>Saved on this device</span><button data-action="privacy-info" aria-label="About your data">ⓘ</button><div class="profile"><span class="avatar">JP</span><span><b>Jamie Parker</b><small>Family admin</small></span><button data-action="profile-menu" aria-label="Profile options">···</button></div></div>
+  </aside>
+  <main id="app" class="content"></main>
+</div>
+<dialog id="entry-dialog" class="entry-dialog"><form id="entry-form" method="dialog"><div class="dialog-head"><div><p class="eyebrow">HOUSEHOLD LEDGER</p><h2 id="dialog-title">Add transaction</h2></div><button type="button" class="icon-button" id="close-dialog" aria-label="Close">×</button></div><input type="hidden" id="entry-id"><label>Description<input id="entry-name" required maxlength="70" placeholder="e.g. Weekly groceries"></label><div class="form-row"><label>Amount <small>income is positive</small><span class="money-input">$<input id="entry-amount" type="number" min="0.01" step="0.01" required></span></label><label>Type<select id="entry-type"><option value="expense">Expense</option><option value="income">Income</option></select></label></div><div class="form-row"><label>Category<select id="entry-category"></select></label><label>Date<input id="entry-date" type="date" required></label></div><label>Account<select id="entry-account"><option>Everyday checking</option><option>Joint savings</option><option>Visa card</option></select></label><div class="dialog-actions"><button type="button" id="delete-entry" class="text-danger hidden">Delete transaction</button><span></span><button type="button" id="cancel-dialog" class="button quiet">Cancel</button><button type="submit" class="button primary">Save transaction</button></div></form></dialog>
+<dialog id="confirm-dialog" class="confirm-dialog"><form method="dialog"><h2 id="confirm-title">Are you sure?</h2><p id="confirm-copy"></p><div class="dialog-actions"><span></span><button class="button quiet">Cancel</button><button id="confirm-yes" class="button danger">Delete</button></div></form></dialog>
+<div id="toast" class="toast" role="status"></div>
+</body>
+</html>

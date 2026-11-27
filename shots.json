@@ -1,0 +1,6 @@
+[
+  { "file": "01-overview.jpg", "path": "#overview", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "02-budgets.jpg", "path": "#budgets", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "03-transactions.jpg", "path": "#transactions", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "04-overview-phone.jpg", "path": "#overview", "viewport": { "width": 390, "height": 844 } }
+]
